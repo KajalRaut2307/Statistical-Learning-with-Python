@@ -1,0 +1,42 @@
+SL: Statistical Learning
+
+
+- SL refers to vast set of tools for understanding data
+	- supervised - predicting or estimating
+	- unsupervised 
+
+- Regression problem - predict continuous or quantitative output value
+	- certain cases, predict non-numeric - categorical or qualitative output
+
+- Classification - output fall into N buckets
+
+Figure 2.1 - smarket data box plots -  the % change for previous day with today's direction.
+	securities with -ve % change yesterday could go up.
+
+
+- clustering problem - group objects/individuals according to their characteristics.
+
+- principal components of data - reduced dimensions
+
+- history
+	- 19the century - least squares, linear regression for quantitative values
+	- 1936 - linear discriminant analysis for predicting qualitative values
+	- 1940 - logistic regression - alternative approach for predicting qualitative values
+	- 1970s - generalized linear model - class of SL methods, include both linear and logistic regression
+	- 1980s - classification and regression trees, followed by generalized additive models
+	- 1980s - Neural Networks
+	- 1990s - Support vector machines
+
+SL - subfield in statistics, focused on supervised and unsupervised modeling and prediction
+
+
+Notations
+	- n = number of data points/observations
+	- p = number of variables
+	- xij = value of jth variable for ith observation
+		where i=1,2,3,...,n and j=1,2,3,...,p
+	- X = n x p matrix
+	- xi = ith row -> vector of p x 1 shape = ith observation
+	- xj = jth column -> vector of n x 1 shape = jth variable
+
+	
