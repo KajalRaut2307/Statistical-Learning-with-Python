@@ -1,0 +1,89 @@
+Y = f(X) + e
+
+Here f is some fixed but unknown function of X1, . . . ,Xp, 
+and e is a random error term, which is independent of X and has mean zero. 
+
+In this formulation, f represents the systematic information that X provides about Y.
+
+In essence, statistical learning refers to a set of approaches for estimating f.
+
+reasons to estimate: prediction and inference
+
+Prediction -
+
+Y^ = f^(X)
+
+f^ -> estimate of f -> black box
+Y^ -> resulting prediction for Y
+
+
+Accuracy of Y^ as a prediction of Y depends on two quantities 
+
+- Reducible error
+	- improve accuracy of f^
+	- Y^ = f(X)
+
+- Irreducible error
+	- variability associated with e
+	- by definition independent of X
+	- may contain unmeasurable variation
+
+
+
+Inference -
+
+ - understand association between Y and X1,X2,..,Xp.
+ - f^ is not a black box
+
+examples of inference problems -
+ – Which media are associated with sales?
+ – Which media generate the biggest boost in sales? or
+ – How large of an increase in sales is associated with a given increase in TV advertising?
+
+
+Depending on whether our ultimate goal is prediction, inference, or a combination of the two, different methods for estimating f may be appropriate.
+
+
+Most statistical learning methods for estimating f can be characterised as either parametric or non-parametric.
+
+Parametric Methods
+
+ - 2 step model-based approach
+
+ 1. we make assumption about the function form or shape of f.
+	for example - simple assumption that f is linear in X
+		f(X) = B0 + B1X1 +B2X2 + ...+ BpXp
+
+	This is a linear model. once assumed, estimating f is simplified.
+	Instead of estimating p-dimensional function f(X), one only needs to estimate the p+1 coefficients B0,B1,...,Bp
+
+ 2. after a model is selected, we need procedure that uses training data to fit or train model.
+	for linear model, need to estimate parameters  B0,B1,...,Bp
+	The most common approach to fitting the model is referred to as (ordinary) least squares. one of many possible ways to fit the linear model
+
+parametric - reduce problem of estimating f down to one of estimating a set of parameters.
+
+advantage - simplifies the problem of estimating f -> estimate parameters than arbitrary function f
+
+disadvantage - choosen model will usually not match true unknown form of f
+	- can try to address the problem using flexible models
+		- may require estimating greater number of parameters
+	- can lead to overfitting of the data
+
+
+Non-Parametric Methods
+ - do not make explicit assumptions about the function form of f
+ - seek to estimate f without being too rough or wiggly
+
+advantage - potential to accurately fit a wider range of possible shapes for f
+
+disadvantage - since do not reduce the problem to estimating small number of parameters, a very large number of observations is rquired to obtain an accurate estimate of f
+
+
+to be contn...
+
+
+
+
+
+
