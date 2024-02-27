@@ -72,6 +72,7 @@ disadvantage - choosen model will usually not match true unknown form of f
 
 
 Non-Parametric Methods
+
  - do not make explicit assumptions about the function form of f
  - seek to estimate f without being too rough or wiggly
 
@@ -80,7 +81,58 @@ advantage - potential to accurately fit a wider range of possible shapes for f
 disadvantage - since do not reduce the problem to estimating small number of parameters, a very large number of observations is rquired to obtain an accurate estimate of f
 
 
-to be contn...
+In general, as the flexibility of a method increases, its interpretability decreases.
+
+we might choose restrictive method instead of flexible approach for
+	- inference - more interpretable
+
+interpretability (high->low), flexibility (low->high)
+
+- Lasso - relies upon linear model, sets number of coefficients to zero, less flexible tham LM but more interpretables
+- Least Squares
+- Generalized additive models (GAMs) - extends LM for certain non-linear relationships, more flexible but less interpretable tham LM
+- bagging, boosting - non-linear methods
+- SVM
+- Neural Networks (Deep Learning) - highly flexible, harder to interpret
+
+
+
+Most Statistical learning problems fall into one of the two categories - supervised or unsupervised
+
+
+Supervised Learning methods
+	- aim to accurately predict response for future observations (prediction)
+	- better understand the relationship between the response and the predictors (inference)
+
+	- classical statistical learning methods = linear and logistic regression
+	- modern approaches - GAMs, bagging, boosting SVM
+
+
+
+Unsupervised Learning Methods
+	- can seek to understand relationships between the observations
+
+	- clustering or cluster analysis
+
+
+Semi-supervised learning problem
+In this setting, we wish to use a sta- semisupervised learning method that can incorporate the m observations for which response measurements are available as well as the n −m observations for which they are not.
+
+
+
+Variables - quantitative or qualitative (categorical)
+
+problems with quatitative response - regression problem - least square
+	 with qualitative response - classification problem - logistic regression (two-class or binary)
+
+Logistic regression predicts class probabilities - can be thought of as a regression method as well
+
+K-nearest neighbors and boosting can be used for either quantitative or qualitative responses.
+
+
+
+
+
 
 
 
