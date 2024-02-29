@@ -131,6 +131,21 @@ K-nearest neighbors and boosting can be used for either quantitative or qualitat
 
 
 
+Measuring the Quality of fit
+
+- In regression setting, the most commonly used measure is mean squared error (MSE) = 1/n E(yi - f^(xi))^2
+- we want models that predict lower "test" MSE and not the ones that have lower "train" MSE
+	- no guarantee that the method with the lowest train MSE will also have lowest test MSE
+	- problem is that many statistical methods generate coefficient to minimize the train MSE
+ 
+The degrees of freedom is a quantity that summarizes the flexibility of a curve.
+
+As model flexibility increases, the training MSE will decrease, but the test MSE may not.  When a given method yields a small training MSE but a large test MSE, we are said to be overfitting the data.
+
+Overfitting refers specifically to the case in which a less flexible model would have yielded a smaller test MSE.
+
+Cross-Validation - mthod for estimating test MSE using training data.
+
 
 
 
