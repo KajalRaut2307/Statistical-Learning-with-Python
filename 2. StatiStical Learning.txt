@@ -144,13 +144,26 @@ As model flexibility increases, the training MSE will decrease, but the test MSE
 
 Overfitting refers specifically to the case in which a less flexible model would have yielded a smaller test MSE.
 
-Cross-Validation - mthod for estimating test MSE using training data.
+Cross-Validation - method for estimating test MSE using training data.
 
 
+Bias-Variance Trade off
 
+expected test MSE, for a given value x0, can always be decomposed into the sum of three fundamental quantities: the variance of f^(x0), the squared bias of  f^(x0) and the variance of the error variance terms e.
 
+	E(y0 − f^(x0)^2 = Var( f^(x0)) + [Bias(  f^(x0))]^2 + Var(e).
 
+Variance refers to the amount by which f^ would change if we estimated it using a different training data set.
+In general, more flexible statistical methods have higher variance.
 
+bias refers to the error that is introduced by approximating a real-life problem, which may be extremely complicated, by a much simpler model.
+Generally, more flexible methods result in less bias.
 
+As a general rule, as we use more flexible methods, the variance will increase and the bias will decrease.
+
+The relative rate of change of these two quantities determines whether the test MSE increases or decreases.
+
+ As we increase the flexibility of a class of methods, the bias tends to initially decrease faster than the variance increases. Consequently, the expected test MSE declines. 
+However, at some point increasing flexibility has little impact on the bias but starts to significantly increase the variance. When this happens the test MSE increases. 
 
 
